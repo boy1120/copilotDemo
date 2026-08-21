@@ -1,0 +1,15 @@
+{
+  "id": "clear-auditable-radiology-foundation-model",
+  "title": "CLEAR: an auditable foundation model for radiology grounded in clinical concepts",
+  "authors": ["Tianyu Han", "Riga Wu", "Yu Tian", "Firas Khader", "Lisa C. Adams", "Keno K. Bressem", "Christos Davatzikos", "Jakob Nikolas Kather", "Li Shen", "David A. Mankoff", "Eduardo Mortani Barbosa", "Daniel Truhn"],
+  "venue": "Nature Biomedical Engineering",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41551-026-01741-4",
+  "abstract": "'Black box' deep learning models for medical image interpretation limit clinical trust and analysis of performance degradation. Here we introduce Concept-Level Embeddings for Auditable Radiology (CLEAR), an auditable foundation model based on clinical concepts. Trained on over 0.87 million image-report pairs from 239,391 patients, CLEAR learns a visual representation and projects chest X-rays into a semantically rich space defined by large language model embeddings, making every prediction decomposable into weighted contributions from individual radiological observations. External validation on four large, physician-annotated datasets from the United States, Europe and Asia shows that CLEAR not only achieves state-of-the-art classification performance but also enables applications: auditable zero-shot pathology detection, systematic identification of radiological confounders and the creation of expert-level concept bottleneck models from data-driven concepts. By integrating clinical knowledge directly into its reasoning process, CLEAR offers a framework for robust model auditing, safer deployment and enhanced physician-AI collaboration, advancing towards trustworthy medical AI.",
+  "axes": ["기관 간 일반화", "판독 근거 설명가능성"],
+  "takeaway": "임상 개념 기반 임베딩으로 흉부 X선 판독을 근거별로 분해해 감사 가능하게 만든 파운데이션 모델이 4개국 외부 데이터셋에서 최고 수준의 분류 성능을 보였다.",
+  "relevance": "본 코호트는 272건의 정면 흉부 X선(PA 184건, AP 88건)에 무소견 145건, 침윤 21건, 무기폐 16건 등 다중 라벨 소견이 섞여 있어, 소견별 근거를 분해해 제시하는 개념 기반 접근이 판독 검증에 유용할 수 있다.",
+  "caveat": "우리 데이터는 153명 규모의 단일 세트로 인구·기관 다양성이 제한적이라 CLEAR가 보고한 4개국 외부 검증 수준의 일반화 여부는 확인할 수 없다.",
+  "check": "CLEAR의 개념 병목 모델을 우리 코호트의 침윤/무기폐 라벨에 적용했을 때 소견별 기여도가 실제 판독의(예: 방사선의) 근거와 일치하는지 확인해볼 만하다."
+}
