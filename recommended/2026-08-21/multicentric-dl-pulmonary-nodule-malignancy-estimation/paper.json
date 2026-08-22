@@ -1,0 +1,25 @@
+{
+  "id": "multicentric-dl-pulmonary-nodule-malignancy-estimation",
+  "title": "Multicentre performance and consistency of two deep learning models for malignancy probability estimation of incidental pulmonary nodules",
+  "authors": [
+    "Renate Dinnessen",
+    "Noa Antonissen",
+    "Dré Peeters",
+    "Hester A. Gietema",
+    "Michiel T.H.M. Henkens",
+    "Firdaus A. A. Mohamed Hoesein",
+    "Ernst T. Scholten",
+    "C Schaefer-Prokop",
+    "Colin Jacobs"
+  ],
+  "venue": "European Radiology",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1007/s00330-026-12787-y",
+  "abstract": "OBJECTIVES: A screening-trained deep learning (DL) model (DL1) for pulmonary nodule malignancy probability estimation on CT previously demonstrated good discrimination on a single-centre dataset of incidental nodules. An updated DL model (DL2) was trained on both screening and clinical data. We aimed to test the performance of both models in a multicentre dataset of incidental nodules. MATERIALS AND METHODS: A retrospective, multicentre, case-control dataset of incidental nodules was collected, sampled across size buckets (5-10 mm, 10-15 mm, 15-30 mm), aiming for 10 malignant and 20 benign nodules per bucket and centre, resulting in 270 nodules. Performance was assessed using AUCs and specificity at a fixed sensitivity. AUCs were compared using the DeLong method. Both DL models were compared with the Brock model. Consistent discrimination was investigated by centre-stratified analyses. RESULTS: The multicentre dataset contained 269 nodules (89 malignant) from 231 patients. DL1 and DL2 achieved AUCs of 0.74 and 0.72, respectively, versus 0.63 for Brock (both p < 0.01). Using a 10% threshold for the Brock model (sensitivity 77.5%), specificity was 60% for both DL models compared with 44% for the Brock model. Centre-specific AUCs for DL1, DL2, and Brock were 0.76, 0.75, and 0.74 (centre 1), 0.72, 0.71, and 0.55 (centre 2), and 0.73, 0.71, and 0.59 (centre 3), respectively. CONCLUSION: The DL models outperformed the Brock model on a multicentre, cancer-enriched size-stratified dataset and performed consistently across centres, though prospective validation in representative cohorts with real-world prevalences is needed. The DL model trained with additional clinical data performed equal to the screening-trained model. KEY POINTS: Question How consistent is the performance of a screening-trained deep learning model across multicentre incidental pulmonary nodules, and does an additionally clinically trained model improve performance? Findings The two deep learning models showed similar discrimination, outperforming the clinically used Brock model in the pooled cancer-enriched dataset, and consistent performance across multiple centres. Clinical relevance The current study provides evidence of consistent model performance across centres with varying CT characteristics and patient populations within one country, supporting the potential of DL models to classify pulmonary nodules across different clinical settings.",
+  "axes": ["기관 간 일반화", "결절/병변 아형 분류"],
+  "takeaway": "다기관 사례-대조 데이터셋(3개 기관, 269개 결절)에서 두 딥러닝 모델은 기관별 AUC 0.71–0.76으로 안정적인 판별력을 보이며 임상 표준인 Brock 모델(AUC 0.55–0.74)을 능가했다.",
+  "relevance": "우리 코호트에서 Nodule은 272건 중 7건으로 소수 소견이지만 5개 기관(INST01–05)에 걸쳐 분포하며, 이 논문이 다루는 '기관별 성능 편차' 문제는 우리 데이터의 기관 간 이질성 문제와 방법론적으로 직결된다.",
+  "caveat": "이 논문은 CT 결절의 악성 확률 추정을 다루지만 우리 코호트는 흉부 X선 영상으로, 모달리티와 병변 유형(결절 크기·CT 텍스처 특징)이 달라 정량적 성능 수치를 직접 대응시킬 수 없다.",
+  "check": "우리 코호트의 소수 Nodule 사례에서 기관별로 판독 소견 일치도나 후속 검사 전환율에 편차가 있는지 확인해볼 만하다."
+}
