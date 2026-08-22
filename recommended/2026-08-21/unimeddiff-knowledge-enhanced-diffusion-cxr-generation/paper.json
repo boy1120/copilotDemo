@@ -1,0 +1,24 @@
+{
+  "id": "unimeddiff-knowledge-enhanced-diffusion-cxr-generation",
+  "title": "UniMedDiff: a knowledge-enhanced diffusion model for medical image generation from clinical reports",
+  "authors": [
+    "Lexuan Liu",
+    "Peng Huang",
+    "Bowen Guo",
+    "Shuyu Liang",
+    "Junhu Fu",
+    "Zixia Zhou",
+    "Yuanyuan Wang",
+    "Yi Guo"
+  ],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03135-x",
+  "abstract": "The scarcity of high-quality medical data restricts the advancement of computer-aided diagnosis. Text-to-image (TTI) generation offers a promising solution through controlled and diverse synthesis but is still hindered by noisy data, complex report structures, and varied disease representations. We propose UniMedDiff, a disease-knowledge-enhanced diffusion framework for synthesizing anatomically accurate and pathologically diverse medical images from clinical reports. Trained on noise-filtered image–text pairs, UniMedDiff extracts and aligns concise text embeddings with visual features from lengthy reports, enabling pathology-aware guidance for medical image generation. It facilitates controllable generation by integrating reports and prior disease knowledge into the diffusion process, achieving favorable performance across multiple datasets and evaluation tasks. On chest X-rays (CXRs), UniMedDiff generates diverse CXRs representing 11 pulmonary pathologies from both in-/out-of-distribution reports. Qualitative and quantitative results demonstrate its state-of-the-art performance in generation quality, computational efficiency and factual correctness. UniMedDiff also exhibits utility in downstream tasks, including unimodal classification and cross-modal report generation, achieving near full-data performance by augmenting 1% real data. Its cross-modality generalization is evaluated through dermoscopy and colonoscopy image synthesis. By bridging clinical reports and visual disease patterns, UniMedDiff advances medical image synthesis for diagnostic research and data augmentation.",
+  "axes": ["데이터 증강/희소 라벨 대응", "판독문-영상 정합"],
+  "takeaway": "UniMedDiff는 판독 보고서로부터 11개 폐 병리를 반영한 흉부 X선을 생성하며, 실데이터 1%만 증강해도 전체 데이터 학습에 근접한 다운스트림 분류 성능을 달성했다.",
+  "relevance": "우리 코호트는 272건 중 No Finding이 145건(53%)으로 압도적이고 Pneumothorax(5건), Fibrosis(6건) 등 희소 소견은 개별적으로 10건 미만에 불과해 심각한 클래스 불균형이 존재하며, 이 논문이 제시하는 판독문 기반 소수 클래스 증강 전략이 그대로 적용 가능한 상황이다.",
+  "caveat": "이 논문의 정량 성능은 자체 벤치마크 데이터셋에서 측정된 것으로, 우리 report_text의 서술 스타일과 병변 조합(다중 라벨 동반 소견 다수)에 대해 생성 품질이나 다운스트림 이득이 동일하게 재현될지는 알 수 없다.",
+  "check": "우리 report_text를 조건으로 희소 소견(Pneumothorax, Fibrosis 등) 합성 영상을 생성했을 때, 분류기 성능이 실제로 개선되는지 소규모 실험으로 확인해볼 만하다."
+}

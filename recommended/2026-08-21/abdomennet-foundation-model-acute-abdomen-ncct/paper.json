@@ -1,0 +1,28 @@
+{
+  "id": "abdomennet-foundation-model-acute-abdomen-ncct",
+  "title": "A foundation model for acute abdomen diagnosis stratification and triage on noncontrast computed tomography",
+  "authors": [
+    "Chao Zhu",
+    "Ruipeng Zhang",
+    "Xinyu Song",
+    "Kai Shang",
+    "Yu Lu",
+    "Wenjuan Wu",
+    "Jian Ma",
+    "Yixiao Tang",
+    "Zhongzheng Cao",
+    "Li Shen",
+    "Jianyong Wei",
+    "Lisong Dai"
+  ],
+  "venue": "Nature Communications",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41467-026-76634-w",
+  "abstract": "Accurate and timely diagnosis of acute abdominal emergencies remains challenging. Non-contrast computed tomography (NCCT) is often used as an initial imaging modality because of atypical presentations, contraindications to contrast, or resource constraints. Here we present AbdomenNet, a multi-task AI system built on a self-supervised foundation model that detects 11 acute abdominal conditions and performs three risk-stratification subtasks from NCCT images. AbdomenNet is pre-trained on 103,989 NCCT examinations and fine-tuned on 5816 annotated cases. We assess generalizability in 2528 patients from three independent external cohorts, evaluate radiologist performance in a multi-reader multi-case crossover study, and estimate workflow impact using retrospective reconstruction. In external validation, AbdomenNet achieves a macro-average AUROC of 0.919 for five emergent conditions. AI assistance increases radiologists' mean AUROC from 0.812 to 0.924 and reduces median reading time by 52.5 seconds per case. Workflow reconstruction indicates that AI-driven prioritization could shorten median report turnaround time by 37 minutes. The authors present AbdomenNet, a foundation model for non-contrast computed tomography. It detects 11 acute abdominal conditions, helps identify high-risk cases, improves radiologist accuracy, and may speed emergency reporting.",
+  "axes": ["기관 간 일반화", "판독 보조 효과"],
+  "takeaway": "다기관 외부 검증(3개 코호트, 2528명)에서 AbdomenNet은 5개 응급 소견에 대해 매크로 평균 AUROC 0.919를 달성했고, AI 보조는 판독의 평균 AUROC를 0.812에서 0.924로 높이고 판독 시간을 단축시켰다.",
+  "relevance": "우리 코호트는 5개 기관(INST01–05, 62/56/54/48/52건)과 9개 촬영 장비에 걸쳐 수집되어 기관·장비 간 이질성이 존재하며, 272건 중 145건(53%)이 No Finding이고 나머지는 Infiltration·Atelectasis 등 다양한 소견으로 분산되어 있어, 이 논문이 강조하는 다기관 외부 검증과 판독 보조 효과가 우리 데이터의 기관 간 편차 문제와 직접 맞닿아 있다.",
+  "caveat": "이 논문은 복부 NCCT를 다루며 우리 코호트는 흉부 X선(PA/AP)만 포함하므로, 모달리티 자체가 달라 AbdomenNet의 성능 수치를 우리 데이터에 그대로 적용할 수 없다.",
+  "check": "AbdomenNet과 유사한 다기관 외부 검증-판독 보조 설계를 우리 흉부 X선 5개 기관 데이터에 적용했을 때도 판독 시간 단축과 정확도 향상이 재현되는지 확인할 만하다."
+}
